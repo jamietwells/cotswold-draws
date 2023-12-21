@@ -1,1 +1,68 @@
-Chris Twells
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - South Cotswolds Arts Network</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        section {
+            padding: 40px;
+        }
+
+        h1, h2 {
+            color: #004d7d; /* navy */
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* Add your custom styles here */
+
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <h1>Welcome to South Cotswolds Arts Network</h1>
+
+        <h2>Our Mission</h2>
+        <p>We strive to make a positive impact by providing grants to good causes in the arts community of Gloucestershire and Wiltshire. We're passionate about fostering cultural participation, advancing arts education and promoting social engagement and wellbeing.</p>
+
+        <h2>Inclusive Support</h2>
+        <p>We believe in the power of the arts to bring people together. That's why we extend our support not only to traditional charities but also to non-profits and community groups that share our vision of a thriving arts sector.</p>
+
+        <h2>How We Make a Difference</h2>
+        <p>To achieve our goals, our Board has the power to raise funds, receive donations, collaborate with like-minded organisations and take any lawful steps necessary to fulfill our mission.</p>
+
+        <h2>Our Chair</h2>
+        <p>Chris Twells represents Tetbury with Upton ward on Cotswold District Council. He sits as a Tetbury & District Independent on CDC and does not take a party whip. Chris studied Law at the University of York and takes a keen interest in constitutional and electoral law. He lives in Tetbury and runs his own business in the town. With ten years' experience as a professional political campaigner, fundraiser and community organiser, he has run successful campaigns in some of the most deprived areas of England.</p>
+    </section>
+
+</body>
+
+</html>
