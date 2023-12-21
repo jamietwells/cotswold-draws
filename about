@@ -32,10 +32,9 @@
             text-transform: none; /* Standard sentence case for the title */
         }
 
-        subheader {
-            font-size: 1.2em;
+        h2 {
+            font-size: 2em;
             margin-bottom: 20px;
-            color: #004d7d; /* navy */
         }
 
         nav {
@@ -65,12 +64,6 @@
 
         section {
             padding: 40px;
-        }
-
-        h2 {
-            color: #004d7d; /* navy */
-            font-size: 2em;
-            margin-bottom: 20px;
         }
 
         p {
