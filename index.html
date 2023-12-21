@@ -5,10 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>South Cotswolds Arts Network</title>
-    <link href="https://fonts.googleapis.com/css2?family=Copperplate+Gothic+Bold&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <style>
+        @font-face {
+            font-family: 'Mona Sans';
+            src:
+                url('Mona-Sans.woff2') format('woff2 supports variations'),
+                url('Mona-Sans.woff2') format('woff2-variations');
+            font-weight: 200 900;
+            font-stretch: 75% 125%;
+        }
+
+        html {
+            font-family: 'Mona Sans', sans-serif;
+        }
+
         body {
-            font-family: 'Open Sans', sans-serif;
             background-color: #f8f8f8;
             color: #333;
             margin: 0;
@@ -24,7 +35,6 @@
         }
 
         h1 {
-            font-family: 'Copperplate Gothic Bold', sans-serif;
             font-size: 2.5em;
             margin: 0;
             text-transform: capitalize; /* Convert title to small caps */
@@ -49,7 +59,7 @@
             width: 100%;
             height: 60vh;
             object-fit: cover;
-            object-position: 50% 10%; /* Center horizontally, crop 10% from the top */
+            object-position: 50% 0; /* Center horizontally, hide the lower fifth */
             display: block;
             margin: 20px auto;
         }
@@ -78,7 +88,7 @@
 
         address {
             font-size: 0.8em;
-            font-family: 'Open Sans', sans-serif;
+            font-family: 'Mona Sans', sans-serif;
             margin-top: 20px;
         }
     </style>
