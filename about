@@ -40,8 +40,85 @@
             margin-bottom: 10px;
         }
 
+        /* Adapted styles to match the provided website */
+        header {
+            background-color: #004d7d;
+            color: #ffeec2;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #004d7d;
+            color: #ffeec2;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        footer {
+            background-color: #004d7d;
+            color: #ffeec2;
+            text-align: center;
+            padding: 20px;
+            font-size: 10px;
+        }
+
+        address {
+            font-size: 10px;
+            margin-top: 20px;
+            font-style: normal;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
         /* Add your custom styles here */
     </style>
 </head>
 
-<body
+<body>
+
+    <header>
+        <h1>Welcome to South Cotswolds Arts Network</h1>
+    </header>
+
+    <nav>
+        <a href="#mission">Our Mission</a>
+        <a href="#support">Inclusive Support</a>
+        <a href="#difference">How We Make a Difference</a>
+        <a href="#chair">Our Chair</a>
+    </nav>
+
+    <section id="mission">
+        <h2>Our Mission</h2>
+        <p>We strive to make a positive impact by providing grants to good causes in the arts community of Gloucestershire and Wiltshire. We're passionate about fostering cultural participation, advancing arts education and promoting social engagement and wellbeing.</p>
+    </section>
+
+    <section id="support">
+        <h2>Inclusive Support</h2>
+        <p>We believe in the power of the arts to bring people together. That's why we extend our support not only to traditional charities but also to non-profits and community groups that share our vision of a thriving arts sector.</p>
+    </section>
+
+    <section id="difference">
+        <h2>How We Make a Difference</h2>
+        <p>To achieve our goals, our Board has the power to raise funds, receive donations, collaborate with like-minded organisations and take any lawful steps necessary to fulfill our mission.</p>
+    </section>
+
+    <section id="chair">
+        <h2>Our Chair</h2>
+        <p>Chris Twells represents Tetbury with Upton ward on Cotswold District Council. He sits as a Tetbury & District Independent on CDC and does not take a party whip. Chris studied Law at the University of York and takes a keen interest in constitutional and electoral law. He lives in Tetbury and runs his own business in the town. With ten years' experience as a professional political campaigner, fundraiser and community organiser, he has run successful campaigns in some of the most deprived areas of England.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 South Cotswolds Arts Network. All rights reserved. Chair: Cllr Chris Twells LLB (Hons)</p>
+        <p>Photo: <a href="https://commons.wikimedia.org/wiki/File:The_Green_Tetbury_with_snow_-_geograph.org.uk_-_3308848.jpg" style="color: inherit; text-decoration: none;">Wikimedia Commons</a></p>
+        <address>Unit A - Didmarton, Priory Park, London Road, Tetbury, GL8 8HZ • We provide grants to charities, arts groups, and other good causes across the South Cotswolds, broadly defined as South East Gloucestershire and North West Wiltshire.</address>
+    </footer>
+
+</body>
+
+</html>
