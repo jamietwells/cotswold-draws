@@ -17,6 +17,7 @@
             margin: 0;
             padding: 0;
             line-height: 1.6;
+            overflow: hidden; /* Prevent vertical scrollbar due to snowfall animation */
         }
 
         header {
@@ -52,63 +53,4 @@
             width: 100%;
             height: 60vh; /* Adjust this value to crop or hide more/less of the bottom */
             object-fit: cover;
-            display: block;
-            margin: 20px auto;
-        }
-
-        section {
-            padding: 40px;
-        }
-
-        h2 {
-            color: #004d7d; /* navy */
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-
-        p {
-            font-size: 1.2em;
-            margin-bottom: 20px;
-        }
-
-        footer {
-            background-color: #004d7d; /* navy */
-            color: #ffeec2; /* buff */
-            text-align: center;
-            padding: 20px;
-        }
-
-        address {
-            font-size: 9px; /* Adjusted to size 9 */
-            font-family: 'Open Sans', sans-serif;
-            margin-top: 20px;
-            font-style: normal; /* Not italicized */
-        }
-    </style>
-</head>
-
-<body>
-
-    <header>
-        <h1>South Cotswolds Arts Network</h1>
-    </header>
-
-    <nav>
-        <a href="#">about</a>
-        <a href="#">tickets</a>
-        <a href="#">grants</a>
-        <a href="#">donate</a>
-    </nav>
-
-    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/The_Green_Tetbury_with_snow_-_geograph.org.uk_-_3308848.jpg" alt="Cropped Image">
-
-    <footer>
-        <p>&copy; 2024 South Cotswolds Arts Network. All rights reserved.</p>
-        <address>
-            Unit A - Didmarton, Priory Park, London Road, Tetbury, GL8 8HZ
-        </address>
-    </footer>
-
-</body>
-
-</html>
+            display:
