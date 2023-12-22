@@ -44,24 +44,23 @@
             text-align: center;
             padding: 10px 0;
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            justify-content: center; /* Center the links horizontally */
         }
 
         nav a {
             color: #ffeec2;
             text-decoration: none;
             padding: 10px 20px;
-            display: block;
-            margin: 10px 0;
+            display: inline-block; /* Arrange links horizontally */
+            margin: 0 10px;
             border: 2px solid #ffeec2;
             border-radius: 5px;
         }
 
         img {
-            width: 100%;
+            width: 90%; /* Slightly smaller */
             max-width: 100%;
-            height: 56.25vw; /* 16:9 aspect ratio */
+            height: 50.625vw; /* 16:9 aspect ratio */
             object-fit: cover;
             display: block;
             margin: 20px auto;
@@ -88,23 +87,19 @@
 
     <header>
         <h1>South Cotswolds Arts Network</h1>
-        <subheader>Raising £35,000 for good causes in Tetbury, Cirencester, Nailsworth and Malmesbury</subheader>
+        <subheader>Raising £35,000 for good causes in Tetbury, Cirencester, Malmesbury and Nailsworth</subheader>
     </header>
-        <nav>
-        <a href="https://cotswold-draws.co.uk/tickets">supply contact details for a draw ticket</a>
-    </nav>
-
-    <img src="https://live.staticflickr.com/65535/51848185693_8b9cd8d05c_b.jpg" alt="Cropped Image">
-
     <nav>
         <a href="https://cotswold-draws.co.uk/about">about</a>
         <a href="https://cotswold-draws.co.uk/grants">our grants</a>
         <a href="https://buy.stripe.com/9AQaGGgFAcMybTi7ss">donate</a>
     </nav>
 
+    <img src="https://live.staticflickr.com/65535/51848185693_8b9cd8d05c_b.jpg" alt="Cropped Image">
+
     <footer>
         <p>&copy; 2024 South Cotswolds Arts Network. All rights reserved. Chair: Cllr Chris Twells LLB (Hons)</p>
-        <p>Photo: <a href="https://live.staticflickr.com/65535/51848185693_8b9cd8d05c_b.jpg" style="color: inherit; text-decoration: none;">Photo by Kumweni on Flickr. Licensed under [CC BY 2.0] (https://creativecommons.org/licenses/by/2.0/deed.en)</a></p>
+        <p><a href="https://live.staticflickr.com/65535/51848185693_8b9cd8d05c_b.jpg" style="color: inherit; text-decoration: none;">Photo by Kumweni on Flickr. Licensed under [CC BY 2.0] (https://creativecommons.org/licenses/by/2.0/deed.en)</a></p>
         <address>
             Unit A - Didmarton, Priory Industrial Estate, Tetbury, GL8 8HZ • We provide grants to charities, arts groups and other good causes across the South Cotswolds, broadly defined as South East Gloucestershire and North West Wiltshire.
         </address>
