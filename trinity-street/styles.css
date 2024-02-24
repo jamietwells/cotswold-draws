@@ -8,6 +8,7 @@
 html, body {
   height: 100%;
   --primary-colour: #072f5f;
+  --secondary-colour: red;
 }
 
 body {
