@@ -59,6 +59,9 @@ body {
 
 body>header {
   grid-area: head;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 body>nav {
