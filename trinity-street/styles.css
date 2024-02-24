@@ -64,6 +64,16 @@ body>header {
   align-items: center;
 }
 
+body>header>.banner{
+    text-transform: uppercase;
+    background: var(--primary-colour);
+    color: white;
+    padding: 16px;
+    border-radius: 4px;
+    font-size: 13pt;
+    font-weight: bold;
+}
+
 body>nav {
   grid-area: nav;
 }
