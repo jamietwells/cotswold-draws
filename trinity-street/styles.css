@@ -57,6 +57,10 @@ body {
   }
 }
 
+body>header>* {
+  margin-block: 4px;
+}
+
 body>header {
   grid-area: head;
   display: flex;
