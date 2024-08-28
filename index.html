@@ -1,113 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- Load leaflet for R-->
+<script src="https://rstudio.github.io/leaflet/libs/jquery/jquery-3.6.0.min.js"></script>
+<script src="https://rstudio.github.io/leaflet/libs/navigation/tabsets.js"></script>
+<link href="https://rstudio.github.io/leaflet/libs/highlightjs/default.css" rel="stylesheet" />
+<script src="https://rstudio.github.io/leaflet/libs/highlightjs/highlight.js"></script>
+<script src="https://rstudio.github.io/leaflet/libs/htmlwidgets/htmlwidgets.js"></script>
+<link href="https://rstudio.github.io/leaflet/libs/leaflet/leaflet.css" rel="stylesheet" />
+<script src="https://rstudio.github.io/leaflet/libs/leaflet/leaflet.js"></script>
+<link href="https://rstudio.github.io/leaflet/libs/leafletfix/leafletfix.css" rel="stylesheet" />
+<script src="https://rstudio.github.io/leaflet/libs/proj4/proj4.min.js"></script>
+<script src="https://rstudio.github.io/leaflet/libs/Proj4Leaflet/proj4leaflet.js"></script>
+<link href="https://rstudio.github.io/leaflet/libs/rstudio_leaflet/rstudio_leaflet.css" rel="stylesheet" />
+<script src="https://rstudio.github.io/leaflet/libs/leaflet-binding/leaflet.js"></script>
+<link href="https://rstudio.github.io/leaflet/libs/leaflet-measure/leaflet-measure.css" rel="stylesheet" />
+<script src="https://rstudio.github.io/leaflet/libs/leaflet-measure/leaflet-measure.min.js"></script>
+<script src="https://rstudio.github.io/leaflet/libs/leaflet-graticule/L.Graticule.js"></script>
+<script src="https://rstudio.github.io/leaflet/libs/leaflet-graticule/Graticule-binding.js"></script>
+<script src="https://rstudio.github.io/leaflet/libs/leaflet-terminator/L.Terminator.js"></script>
+<script src="https://rstudio.github.io/leaflet/libs/leaflet-terminator/Terminator-binding.js"></script>
+<script src="https://rstudio.github.io/leaflet/libs/leaflet-providers/leaflet-providers_1.13.0.js"></script>
+<script src="https://rstudio.github.io/leaflet/libs/leaflet-providers-plugin/leaflet-providers-plugin.js"></script>
+<link href="https://rstudio.github.io/leaflet/libs/leaflet-minimap/Control.MiniMap.min.css" rel="stylesheet" />
+<script src="https://rstudio.github.io/leaflet/libs/leaflet-minimap/Control.MiniMap.min.js"></script>
+<script src="https://rstudio.github.io/leaflet/libs/leaflet-minimap/Minimap-binding.js"></script>
+<link href="https://rstudio.github.io/leaflet/libs/leaflet-easybutton/easy-button.css" rel="stylesheet" />
+<script src="https://rstudio.github.io/leaflet/libs/leaflet-easybutton/easy-button.js"></script>
+<script src="https://rstudio.github.io/leaflet/libs/leaflet-easybutton/EasyButton-binding.js"></script>
+<link href="https://rstudio.github.io/leaflet/libs/fontawesome/font-awesome.min.css" rel="stylesheet" />
+<link href="https://rstudio.github.io/leaflet/libs/leaflet-markercluster/MarkerCluster.css" rel="stylesheet" />
+<link href="https://rstudio.github.io/leaflet/libs/leaflet-markercluster/MarkerCluster.Default.css" rel="stylesheet" />
+<script src="https://rstudio.github.io/leaflet/libs/leaflet-markercluster/leaflet.markercluster.js"></script>
+<script src="https://rstudio.github.io/leaflet/libs/leaflet-markercluster/leaflet.markercluster.freezable.js"></script>
+<script src="https://rstudio.github.io/leaflet/libs/leaflet-markercluster/leaflet.markercluster.layersupport.js"></script>
+<link href="https://rstudio.github.io/leaflet/libs/ionicons/ionicons.min.css" rel="stylesheet" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>South Cotswolds Arts Network</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        html {
-            font-family: 'Open Sans', sans-serif;
-        }
 
-        body {
-            background-color: #f8f8f8;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-       header {
-            background-color: #004d7d;
-            color: #ffeec2;
-            padding: 15px;
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 3em;
-            margin: 0;
-            text-transform: none;
-        }
-
-        subheader {
-            font-size: 1em;
-            margin-bottom: 20px;
-            color: #ffeec2;
-        }
-
-        nav {
-            background-color: #004d7d;
-            color: #ffeec2;
-            text-align: center;
-            padding: 10px 0;
-            display: flex;
-            justify-content: center; /* Center the links horizontally */
-        }
-
-        nav a {
-            color: #ffeec2;
-            text-decoration: none;
-            padding: 10px 20px;
-            display: inline-block; /* Arrange links horizontally */
-            margin: 0 10px;
-            border: 2px solid #ffeec2;
-            border-radius: 5px;
-        }
-
-        img {
-            width: 90%; /* Slightly smaller */
-            max-width: 100%;
-            height: 50.625vw; /* 16:9 aspect ratio */
-            object-fit: cover;
-            display: block;
-            margin: 20px auto;
-        }
-
-        footer {
-            background-color: #004d7d;
-            color: #ffeec2;
-            text-align: center;
-            padding: 15px;
-            font-size: 12px;
-        }
-
-        address {
-            font-size: 12px;
-            font-family: 'Open Sans', sans-serif;
-            margin-top: 15px;
-            font-style: normal;
-        }
-    </style>
-</head>
-
-<body>
-
-    <header>
-        <h1>South Cotswolds Arts Network</h1>
-        <subheader>We raise £50,000 p.a. for good causes in Tetbury, Cirencester, Malmesbury & Nailsworth</subheader>
-    </header>
-    <nav>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfaALhCcKt2U7wbNBxbhdmYopMpr1oDOjim77rtENIXH_U-OA/viewform?usp=sf_link">sign up for a draw ticket</a>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdY0Bamloxwee774fxbAEl3FJEO_JlQTXbLzIr-X78-sPoQDQ/viewform?usp=sf_link">already have a ticket? let us know your contact details</a>
-    </nav>
-    <img src="https://live.staticflickr.com/65535/51848185693_8b9cd8d05c_b.jpg" alt="Cropped Image">
-    <nav>
-        <a href="https://cotswold-draws.co.uk/about">about</a>
-        <a href="https://cotswold-draws.co.uk/grants">grants</a>
-        <a href="https://buy.stripe.com/9AQaGGgFAcMybTi7ss">donate</a>
-    </nav>
-
-    <div class="divider"></div>
-
-    <footer>
-        <p>&copy; 2024 South Cotswolds Arts Network. All rights reserved.</p>
-        <address>
-            <p>We provide grants to charities, arts groups and other good causes across the South Cotswolds, broadly defined as South East Gloucestershire and North West Wiltshire.</p>
-            <p><a href="https://www.flickr.com/photos/76338186@N03/51848185693/in/photolist-2o5UxTP-2o5kGxk-2piRtxK-2o7jEgN-2o5Pv6F-2mZDvf6-2mYzTXp-9adaYz-9agBCQ-5YbJAG-dMx3rx-22rsGXi-94Qbq1-e4Bd67-94Mavt-9nKCbt-7xdFBb-5Y2S7g-2iQ6Bef-94Lriz-94Lz7a-94Q9RA-zYCKU-94LvDT-94LH3g-94Qqr9-94QwSo-94PMES-94MbZF-94Ma4e-94PUEd-94PDxb-9dZQgt-94LMZr-94QeML-94LDaa-7wssFy-94Qgxu-94MBo6-94Lskk-94PB3N-94Q7pC-94LGAv-94PvLJ-94Q8Gy-94M9wk-94PHym-94PVTJ-94Qg7U-8EJbLB"style="color: inherit; text-decoration: none;">Photo by Kumweni on Flickr. </a><a href="https://creativecommons.org/licenses/by/2.0/deed.en" style="color: inherit; text-decoration: none;">Licensed under CC BY 2.0.</a></p>
-        </address>
-    </footer>
-</body>
-
-</html>
+<!-- leaflet.extras package / check https://github.com/bhaskarvk/leaflet.extras/tree/master/inst/htmlwidgets/build-->
+<!-- You may need to include new refs -->
+<!-- leaflet.extras package / heatmap -->
+<script src="https://dieghernan.github.io/assets/js/leaflet_extras/lfx-heat/lfx-heat-prod.js"></script>
+<script src="https://dieghernan.github.io/assets/js/leaflet_extras/lfx-heat/lfx-heat-bindings.js"></script>	
